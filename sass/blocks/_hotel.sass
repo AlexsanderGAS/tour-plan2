@@ -1,0 +1,157 @@
+.hotel
+    padding-top: 23px
+    padding-bottom: 70px
+    &-info
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding-bottom: 20px
+        &__offer
+            margin-left: 14px
+            margin-top: 4px
+        &__right
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            padding: 8px 7px
+            background-color: $primary
+            color: $light
+            border-radius: 4px
+    &__title
+        font-size: 24px
+        line-height: 30px
+        margin-top: 4px
+        margin-bottom: 0   
+        text-transform: uppercase
+    &-wrapper
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+    &__description
+        font-size: 12px
+        line-height: 15px
+        margin: 0
+    &-grid
+        display: flex
+        justify-content: space-between
+        &__inner
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+.stars
+    width: 100%
+.offer
+    font-size: 10px
+    line-height: 13px
+    padding: 4px 9px
+    background-color: $primary
+    border-radius: 3px
+    color: $light
+.rating__text
+    font-weight: 600
+    font-size: 8px
+    line-height: 10px
+    margin-bottom: 2px
+.rating__counter
+    font-weight: 700
+    font-size: 14px
+    line-height: 18px
+.swiper-container
+    width: 100%
+    height: 450px
+    position: relative
+    border-radius: 8px
+    &::after
+        content: ''
+        width: 100%
+        height: 100%
+        position: absolute
+        top: 0
+        bottom: 0
+        right: 0
+        left: 0
+        background: linear-gradient(180deg,rgba(0, 122, 223, 0.6) 0%,rgba(255, 255, 255, 0.16) 100%)
+        z-index: 54
+.slider
+    max-width: 728px
+    &-button
+        position: absolute
+        height: 30px
+        width: 30px
+        border: none
+        top: 50%
+        transform: translateY(-50%)
+        z-index: 55
+        cursor: pointer
+        background-repeat: no-repeat
+        background-position: center
+        background-size: 10px
+        background-color: transparent
+        &--next
+            right: 18px
+            background-image: url(../images/arrow-right.svg)
+        &--prev
+            left: 18px
+            background-image: url('../images/arrows-left.svg')
+.booking
+    border-radius: 8px
+    width: 350px
+    min-height: 210px
+    padding: 28px
+    background-color: $darkbg     
+    color: $light
+    &__info
+        display: flex
+        justify-content: space-between
+        margin-bottom: 9px
+    &__price
+        display: flex
+        flex-direction: column
+    &__start
+       font-size: 10px
+       line-height: 14px
+    &__pricetag
+        font-weight: 900
+        font-size: 24px
+        line-height: 33px
+    &__per-room
+        font-size: 12px
+        line-height: 16px
+    &__icon
+        height: 14px
+        width: 14px
+        margin-right: 9px
+    &__text
+       font-size: 12px
+       line-height: 16px
+       margin-bottom: 8px 
+    &__button
+        background-color: $primary
+        padding: 13px 84px
+        border-radius: 4px
+        border: none
+        color: $light
+        font-size: 14px
+        line-height: 19px
+        cursor: pointer
+.call-center
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 17px
+    font-weight: 800
+    font-size: 18px
+    line-height: 25px
+    &__number
+        color: inherit
+        text-decoration: none
+    &__numbers
+        margin-left: 8px
+.map
+    width: 347px
+    height: 213px
+    border-radius: 4px
+    background-color: #000
+       
+              

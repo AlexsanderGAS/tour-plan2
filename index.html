@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Best Tour Plan</title>
+    <link rel="stylesheet" href="/css/swiper-bundle.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
@@ -98,7 +99,58 @@
                     <span class="rating__counter">4.5/5</span>
                 </div>
             </div>
+            <div class="hotel-grid">
+                <div class="slider">
+                    <!-- Slider main container -->
+                    <div class="swiper-container">
+    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+      <!-- Slides -->
+                        <div class="swiper-slide"><img src="/images/sliderbg.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="/images/sliderbg.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="/images/sliderbg.jpg" alt=""></div>
+                    </div>
+    
+    <!-- If we need navigation buttons -->
+    <button class="slider-button slider-button--prev"></button>
+    <button class="slider-button slider-button--next"></button>
+      </div>
+      <!-- slider -->
+                </div>
+                <div class="hotel-grid__inner">
+                    <div class="booking">
+                        <div class="booking__info">
+                            <div class="booking__price">
+                                <span class="booking__start">price starts as</span>
+                                <strong class="booking__pricetag">$ 8,500</strong>
+                                <span class="booking__per-room">per room / night</span>
+                            </div>
+                            <div class="booking__room">
+                                <div class="booking__text">
+                                    <img src="/images/user-icon.svg" alt="icon: user" class="booking__icon">
+                                    <span class="booking__descr">2 x Guests</span>
+                                </div>
+                                <div class="booking__text">
+                                    <img src="/images/home-icon.svg" alt="icon: home" class="booking__icon">
+                                    <span class="booking__descr">1 x Room</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="call-center">
+                            <span class="call-center__text">Quick Booking</span>
+                            <a href="tel:12100" class="call-center__number">
+                                 <img src="/images/phone-call-icon.svg" alt="icon: phone">
+                                 <span class="call-center__numbers">12100</span>
+                            </a>
+                        </div>
+                        <button class="button booking__button">View Other Options</button>
+                    </div>
+                    <div class="map"></div>
+                </div>
+            </div>
         </div>
     </section>
+    <script src="/js/swiper-bundle.min.js"></script>
+    <script src="/js/main.js"></script>
 </body>
 </html>
