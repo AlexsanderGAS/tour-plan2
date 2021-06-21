@@ -12,6 +12,10 @@ body {
   margin: 0 auto;
 }
 
+img {
+  max-width: 100%;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -361,6 +365,9 @@ template {
   justify-content: space-between;
   align-items: center;
 }
+.header-top__menu-button {
+  display: none;
+}
 .header__search {
   margin-right: auto;
   margin-left: 108px;
@@ -469,5 +476,37 @@ template {
 
   .logo-horiz {
     width: 133px;
+  }
+}
+@media (max-width: 640px) {
+  .header__search, .header-menu, .header__user {
+    display: none;
+  }
+  .header-top__menu-button {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 11px;
+    padding: 0;
+    width: 16px;
+    justify-content: space-between;
+    border: none;
+    background-color: #ffffff;
+    cursor: pointer;
+  }
+
+  .menu-button__line {
+    width: 16px;
+    height: 1px;
+    background-color: #333333;
+  }
+
+  .header-bottom {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  .logo-horiz {
+    width: 96px;
   }
 }/*# sourceMappingURL=style.css.map */

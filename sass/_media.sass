@@ -20,3 +20,30 @@
             width: 340px
     .logo-horiz
         width: 133px  
+@media  ( max-width: 640px )
+    .header
+        &__search, &-menu, &__user
+            display: none
+        &-top 
+            &__menu-button
+                display: flex
+                align-items: center
+                flex-direction: column
+                height: 11px
+                padding: 0
+                width: 16px
+                justify-content: space-between
+                border: none
+                background-color: $light
+                cursor: pointer
+    .menu
+        &-button
+            &__line
+                width: 16px
+                height: 1px
+                background-color: $dark
+    .header-bottom
+        display: none
+@media(max-width: 576px)
+     .logo-horiz
+        width: 96px  
