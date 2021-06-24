@@ -548,7 +548,7 @@ template {
 
 .swiper-container {
   width: 100%;
-  height: 450px;
+  height: 100%;
   position: relative;
   border-radius: 8px;
 }
@@ -567,6 +567,7 @@ template {
 
 .slider {
   max-width: 728px;
+  height: 450px;
 }
 .slider-button {
   position: absolute;
@@ -632,6 +633,7 @@ template {
   margin-bottom: 8px;
 }
 .booking__button {
+  width: 295px;
   background-color: #EC1F46;
   padding: 13px 84px;
   border-radius: 4px;
@@ -664,11 +666,68 @@ template {
   height: 213px;
   border-radius: 4px;
   background-color: #000;
+  overflow: hidden;
+}
+
+.newsletter {
+  background-image: url(../images/newsletter-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.newsletter__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.newsletter__text {
+  margin-right: 139px;
+  padding: 98px 0 87px;
+  color: #ffffff;
+}
+.newsletter__suptitle {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 30px;
+  margin: 0;
+}
+.newsletter__title {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 45px;
+  text-transform: uppercase;
+  margin: 0;
+}
+.newsletter__search {
+  height: 55px;
 }
 
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
+  }
+
+  .slider {
+    width: 600px;
+  }
+
+  .hotel-grid {
+    width: 100%;
+  }
+  .hotel-grid__inner {
+    margin-left: 18px;
+  }
+
+  .booking {
+    margin-bottom: 10px;
+  }
+
+  .swiper-slider__img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 @media (max-width: 992px) {
@@ -696,6 +755,37 @@ template {
 
   .logo-horiz {
     width: 133px;
+  }
+
+  .hotel-grid {
+    flex-direction: column;
+  }
+  .hotel-grid__inner {
+    flex-direction: row;
+    margin-left: 0;
+  }
+  .hotel__slider {
+    margin-bottom: 30px;
+  }
+
+  .booking {
+    width: 340px;
+    height: 210px;
+    padding: 26px;
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+  .booking__pricetag {
+    font-weight: 800;
+  }
+
+  .slider {
+    width: 100%;
+  }
+
+  .map {
+    width: 340px;
+    border-radius: 10px;
   }
 }
 @media (max-width: 640px) {
@@ -742,13 +832,60 @@ template {
     order: -1;
     margin-left: 0;
   }
+  .hotel-grid__inner {
+    flex-direction: column;
+  }
 
   .stars {
     width: auto;
+  }
+
+  .slider {
+    height: 350px;
+  }
+
+  .booking {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .booking__button {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .map {
+    width: 100%;
   }
 }
 @media (max-width: 576px) {
   .logo-horiz {
     width: 96px;
+  }
+}
+@media (max-width: 400px) {
+  .hotel__slider {
+    margin-bottom: 20px;
+  }
+
+  .slider {
+    height: 300px;
+  }
+}
+@media (max-width: 370px) {
+  .slider {
+    height: 180px;
+    width: 280px;
+  }
+
+  .booking {
+    width: 280px;
+  }
+  .booking__button {
+    padding: 13px 54px;
+    width: 235px;
+  }
+
+  .map {
+    width: 280px;
   }
 }/*# sourceMappingURL=style.css.map */
