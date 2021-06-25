@@ -56,11 +56,30 @@
     .map
         width: 340px
         border-radius: 10px
+    .newsletter
+        &__text
+            margin-right: 108px
+    .reviews
+        &__title
+            font-size: 30px
+            line-height: 38px
+    .activitiers
+        &__item
+            // width: 340px
+            margin-bottom: 20px
 @media  ( max-width: 640px )
+    body
+        // padding-top: 78px
     .header
         &__search, &-menu, &__user
             display: none
         &-top 
+            &--mobile
+                // &-fixed
+                //     position: fixed
+                //     // left: 0
+                //     // top: 0
+                //     z-index: 99
             &__menu-button
                 display: flex
                 align-items: center
@@ -109,9 +128,34 @@
             margin: 0 auto
     .map
         width: 100%
+    .newsletter
+        &__text
+            margin-right: 78px
 @media(max-width: 576px)
-     .logo-horiz
+    .logo-horiz
         width: 96px  
+    .newsletter
+        &__text
+            margin-right: 38px
+        &__suptitle
+            font-size: 20px
+            line-height: 25px
+        &__title
+            font-size: 30px
+            line-height: 38px
+@media(max-width: 530px)
+    .newsletter
+        &__inner
+            flex-direction: column
+            align-items: start
+             padding: 76px 0 83px
+        &__text
+            margin-bottom: 37px
+    .reviews
+        &__title
+            font-size: 18px
+            line-height: 23px
+            margin-bottom: 88px
 @media(max-width: 400px)
     .hotel
         &__slider
@@ -129,3 +173,11 @@
             width: 235px
     .map
         width: 280px
+    .newsletter
+        &__search
+            width: 280px
+    .reviews
+        margin-bottom: 50px
+    .slider-reviews
+        &__wrapper
+            padding: 13px 31px 30px

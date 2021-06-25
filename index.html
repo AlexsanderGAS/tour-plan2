@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Best Tour Plan</title>
     <link rel="stylesheet" href="/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="slick.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
@@ -13,7 +14,7 @@
 <body>
     <header class="header">
         <div class="container">
-            <div class="header-top">
+            <div class="header-top header-top--mobile-fixed">
                 <a href="#" class="header__link">
                     <img src="./images/Logo-Besttourplan.svg" alt="logo: Best Tour Plan" class="logo-horiz">
                 </a>
@@ -152,7 +153,7 @@
             </div>
         </div>
     </section>
-    <!-- <section class="newsletter">
+    <section class="newsletter" data-parallax="scroll" data-image-src="/images/newsletter-img.jpg">
         <div class="container">
             <div class="newsletter__inner">
                 <div class="newsletter__text">
@@ -166,7 +167,177 @@
                     </button>
             </div>
         </div>
-    </section> -->
+    </section>
+    <section class="reviews">
+        <div class="container">
+            <h2 class="reviews__title">What people think about us</h2>
+            <div class="slider-reviews">
+               <div class="lider-reviews__inner">
+                 <div class="slider-reviews__wrapper">
+                    <div class="slider-reviews__portfolio">
+                        <img src="/images/slider-reviews-img.jpg" alt="Megan Fox" class="slider-reviews__img">
+                        <h3 class="slider-reviews__title">Megan Fox</h3>
+                        <span class="slider-reviews__date">Stayed 18 Nov, 2019</span>
+                        <div class="stars">
+                            <img src="/images/star.svg" alt="star">
+                            <img src="/images/star.svg" alt="star">
+                            <img src="/images/star.svg" alt="star">
+                            <img src="/images/star.svg" alt="star">
+                            <img src="/images/star.svg" alt="star">
+                        </div>
+                        <p class="slider-reviews__text">
+                            It was very nice hotel with cleanliness. Staff behavior was good and polite. They welcome us very well. Issue was only that Lift was not in working and we were allotted to 3rd floor and amenities articles were in corner of gallery which were giving bad feeling. Breakfast was good and support of the staff was also very nice. Location is not good as per atmosphere, it is very nearby most of the popular places but self location in a narrow street is not good. Overall it was a good experience and could recommend. 
+                        </p>
+                    </div>
+                 </div>
+                <!-- <div class="slider-reviews__wrapper">
+                    <div class="slider-reviews__portfolio">
+                        <img src="/images/slider-reviews-img.jpg" alt="Megan Fox" class="slider-reviews__img">
+                        <h3 class="slider-reviews__title">Megan Fox</h3>
+                        <span class="slider-reviews__date">Stayed 18 Nov, 2019</span>
+                        <div class="stars">
+                            <img src="/images/star.svg" alt="star">
+                            <img src="/images/star.svg" alt="star">
+                            <img src="/images/star.svg" alt="star">
+                            <img src="/images/star.svg" alt="star">
+                            <img src="/images/star.svg" alt="star">
+                        </div>
+                        <p class="slider-reviews__text">
+                            It was very nice hotel with cleanliness. Staff behavior was good and polite. They welcome us very well. Issue was only that Lift was not in working and we were allotted to 3rd floor and amenities articles were in corner of gallery which were giving bad feeling. Breakfast was good and support of the staff was also very nice. Location is not good as per atmosphere, it is very nearby most of the popular places but self location in a narrow street is not good. Overall it was a good experience and could recommend. 
+                        </p>
+                    </div>
+                </div> -->
+               </div>
+            </div>
+        </div>
+    </section>
+    <section class="activitiers">
+        <div class="container">
+            <h3 class="activitiers__title"> Other Activities</h3>
+            <div class="activitiers-wrapper">
+                <div class="activitiers__item">
+                    <img src="/images/activitiers-img-1.jpg" alt="card 1" class="activitiers__img">
+                    <p class="activitiers__text">The curious corner 
+                        of chamarel</p>
+                    <a href="#" class="activitiers__link">Book Now</a>
+                </div>
+                <div class="activitiers__item">
+                    <img src="/images/activitiers-img-2.jpg" alt="card 1" class="activitiers__img">
+                    <p class="activitiers__text">Gymkhana club golf <br>
+                        course</p>
+                    <a href="#" class="activitiers__link">Book Now</a>
+                </div>
+                <div class="activitiers__item">
+                    <img src="/images/activitiers-img-3.jpg" alt="card 1" class="activitiers__img">
+                    <p class="activitiers__text">Tamarind falls hiking
+                        trip - full day</p>
+                    <a href="#" class="activitiers__link">Book Now</a>
+                </div>
+                <div class="activitiers__item">
+                    <img src="/images/activitiers-img-4.jpg" alt="card 1" class="activitiers__img">
+                    <p class="activitiers__text">The blue marine discoverym quisationem </p>
+                    <a href="#" class="activitiers__link">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-wrapper">
+                <img src="/images/logo-vertical.svg" alt="logo" class="footer__logo">
+                <div class="footer__list">
+                    <h3 class="footer__title">ALL CATEGORIES </h3>
+                    <ul class="footer__ul lifooter__item">All Deals </ul>
+                    <ul class="footer__ul lifooter__item">Hotels
+                    </ul>
+                    <ul class="footer__ul lifooter__item">Activities
+                    </ul>
+                    <ul class="footer__ul lifooter__item">Spa Packages
+                    </ul>
+                    <ul class="footer__ul lifooter__item">Hotel Day Packages
+                    </ul>
+                    <ul class="footer__ul lifooter__item">Restaurants
+                    </ul>
+                    <ul class="footer__ul lifooter__item">Fitness
+                    </ul>
+                    <ul class="footer__ul lifooter__item">Rodrigues</ul>
+                </div>
+                <div class="footer__list">
+                    <h3 class="footer__title">ADDITIONAL INFORMATION</h3>
+                    <ul class="footer__ul lifooter__item">About Us
+                    </ul>
+                    <ul class="footer__ul lifooter__item">Contact Us
+                    </ul>
+                    <ul class="footer__ul lifooter__item">How does it work?
+                    </ul>
+                    <ul class="footer__ul lifooter__item">Frequently Asked Questions
+                    </ul>
+                    <ul class="footer__ul lifooter__item">Deals.mu loyalty program
+                    </ul>
+                    <ul class="footer__ul lifooter__item">Promote your Business on BTP</ul>
+                </div>
+                <div class="footer__social-network">
+                    <h3 class="footer__title">Social Network</h3>
+                    <div class="footer__social-link">
+                        <a href="#" class="footer__link">
+                            <img src="/images/fb-icon.svg" alt="fb" class="footer__icon"></a>
+                        <a href="#" class="footer__link">
+                            <img src="/images/yt-icon.svg" alt="yt" class="footer__icon"></a>
+                        <a href="#" class="footer__link">
+                            <img src="/images/inst-icon.svg" alt="inst" class="footer__icon"></a>
+                    </div>
+                </div>
+                <div class="footer__list">
+                    <h3 class="footer__title">LEGAL INFORMATION</h3>
+                    <ul class="footer__ul lifooter__item">Terms & Conditions
+                    </ul>
+                    <ul class="footer__ul lifooter__item">Disclaimer
+                    </ul>
+                    <ul class="footer__ul lifooter__item">Cancellation policy
+                    </ul>
+                    <ul class="footer__ul lifooter__item">Privacy
+                    </ul> 
+                </div>
+            </div>
+            <div class="footer__inner">
+                <div class="footer__contact">
+                    <h3 class="footer__title">Contact Details</h3>
+                    <p class="footer__text">Feel free to contact us by phone, email or by our contact form</p>
+                    <div class="footer__ul">
+                        <li class="footer__item">
+                            <img class="footer__contact-img" src="/images/place-icon.svg" alt="place" >
+                            <p class="footer__contact-text">9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United States</p>
+                        </li>
+                        <li class="footer__item">
+                            <img class="footer__contact-img" src="/images/phone-icon.svg" alt="phone" >
+                            <p class="footer__contact-text">Tel (business hours) : 269 1500 <br>
+                                Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm) <br>
+                                Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
+                                </p>
+                        </li>
+                        <li class="footer__item">
+                            <img class="footer__contact-img" src="/images/message-icon.svg" alt="message" >
+                            <p class="footer__contact-text">cherly.lawson@example.com</p>
+                        </li>
+                    </div>
+                </div>
+                <div class="footer__contact-form">
+                    <h3 class="footer__title">Send us a message</h3>
+                    <form action="#" class="footer__form">
+                        <input type="text" class="footer__input" placeholder="Your Full Name*">
+                        <input type="text" class="footer__input" placeholder="Phone Number*">
+                         <textarea class="footer__textarea" cols="30" rows="10" placeholder="Message"></textarea>
+                         <button class="footer__btn" type="submit">Send</button>
+                         <span class="footer__ihfo">* Required Fields</span>
+                    </form>
+                </div>
+            </div> 
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/js/parallax.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="/js/slick.min.js"></script>
     <script src="/js/swiper-bundle.min.js"></script>
     <script src="/js/main.js"></script>
 </body>

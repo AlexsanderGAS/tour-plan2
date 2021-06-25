@@ -1,3 +1,11 @@
+// $(document).ready(function(){
+//   $('.lider-reviews__inner').slick({
+//     slidesToShow: 1,
+//   });
+// });
+$('.newsletter').parallax({imageSrc: '/images/newsletter-img.jpg'});
+
+
 const swiper = new Swiper('.swiper-container', {
     // Optional parameters
     loop: true,
@@ -9,3 +17,4 @@ const swiper = new Swiper('.swiper-container', {
     },
   
   });
+  
